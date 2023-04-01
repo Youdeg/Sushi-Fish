@@ -6,16 +6,30 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prisma:migrate": "prisma db push",
+    "prisma:generate": "prisma generate ",
+    "prisma:studio": "prisma studio "
   },
   "dependencies": {
+    "@ardentia/deep-copy": "^1.0.3",
     "@next/font": "13.1.4",
+    "@prisma/client": "^4.9.0",
+    "@reduxjs/toolkit": "^1.9.1",
     "@types/node": "18.11.18",
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
+    "axios": "^1.2.6",
     "next": "13.1.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-redux": "^8.0.5",
+    "react-spinners": "^0.13.8",
+    "redux": "^4.2.0",
+    "sass": "^1.57.1",
     "typescript": "4.9.4"
+  },
+  "devDependencies": {
+    "prisma": "^4.9.0"
   }
 }

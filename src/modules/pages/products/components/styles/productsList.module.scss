@@ -1,0 +1,38 @@
+@media only screen and (max-width: 700px) {
+  .productsList {
+    display: flex;
+
+    width: 100vw;
+
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    padding-left: 2px;
+    padding-right: 2px;
+
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .productsList {
+    display: flex;
+
+    width: 100vw;
+
+    padding-left: 15%;
+    padding-right: 15%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    margin-top: 15px;
+  }
+}
+
+.productsTypesList {
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

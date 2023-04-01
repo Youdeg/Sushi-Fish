@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+$main-color: #c23d5d;
+$hover-color: #de5978;
+
+.addButton {
+  background-color: $main-color;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-width: 0;
+  font-family: "Nunito", sans-serif;
+
+  width: 30%;
+  height: 30px;
+
+  outline: inherit;
+
+  border-style: outset;
+  outline: none;
+
+  transition: all 0.25s;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}

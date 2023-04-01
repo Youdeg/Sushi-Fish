@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+.cart {
+  margin-right: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  color: #c23d5d;
+  font-family: "Nunito", sans-serif;
+}
+
+@media only screen and (min-width: 700px) {
+  .cart {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .cart {
+    width: auto;
+  }
+}
+
+.logo {
+  width: 70%;
+  fill: #c23d5d;
+
+  cursor: pointer;
+
+  transition: all 0.25s;
+
+  &:hover {
+    fill: #c23d5d;
+  }
+}
