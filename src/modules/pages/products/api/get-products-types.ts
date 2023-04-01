@@ -8,15 +8,12 @@ async function getProductsTypesHandler(
   const prisma = new PrismaClient();
 
   const products = await prisma.product.groupBy({
-    //@ts-ignore
     by: ["type"],
   });
 
   for (const product of products) {
     const productsByType = await prisma.product.findMany({
-      //@ts-ignore
       where: {
-        //@ts-ignore
         type: product.type,
       },
     });

@@ -1,0 +1,72 @@
+.card {
+    margin-bottom: 25px;
+    
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    height: 20vh;
+
+    -webkit-box-shadow: -1px 3px 19px 14px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: -1px 3px 19px 14px rgba(0, 0, 0, 0.1);
+    box-shadow: -1px 3px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.productImage {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    flex-basis: 30%;
+}
+
+
+.countButton {
+    width: 19px;
+    height: 19px;
+    background-color: #d3d3d3;
+    border-radius: 50%;
+    text-align: center;
+  
+    margin-left: 5px;
+    margin-right: 5px;
+  
+    cursor: pointer;
+    user-select: none;
+  
+    color: white;
+    font-weight: bolder;
+  }
+
+.count {
+    display: flex;
+    align-items: center;
+
+    flex-basis: 10%;
+}
+
+.summ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    flex-basis: 15%;
+}
+
+.priceAndName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    flex-basis: 25%;
+}
+
+.remove {
+    color: #c23d5d;
+    cursor: pointer;
+
+    flex-basis: 1%;
+    
+}

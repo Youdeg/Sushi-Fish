@@ -28,6 +28,17 @@ const productApi = rootApi.injectEndpoints({
             }))
           : [{ type: TAG_TYPES.PRODUCT, id: "list" }],
     }),
+    getProductsByType: builder.query<Product[], number[]>({
+      query: (body: Number[]) => ({
+        url: "products",
+        method: "POST",
+        body,
+      }),
+      providesTags: (result) =>
+        result?.length
+          ? result.map(({ id }) => ({ type: TAG_TYPES.PRODUCT, id }))
+          : [{ type: TAG_TYPES.PRODUCT, id: "list" }]
+    })
   }),
 });
 
@@ -35,4 +46,5 @@ export const {
   useGetProductsQuery,
   useGetProductsTypesQuery,
   useLazyGetProductsQuery,
+  useGetProductsByTypeQuery
 } = productApi;

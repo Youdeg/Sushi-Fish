@@ -51,8 +51,8 @@ export default function cartReducer(state = cartState, action: AnyAction) {
       newProducts.forEach((product, index, object) => {
         if (product.type === action.payload.type) {
           product.count -= 1;
-          price = product.price;
-          deliveryPrice = product.deliveryPrice;
+          price -= product.price;
+          deliveryPrice -= product.deliveryPrice;
           if (!product.count) object.splice(index, 1);
         }
       });

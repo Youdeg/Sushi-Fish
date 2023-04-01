@@ -89,7 +89,8 @@ const Header = () => {
       <div className={styles.center}>
         <RenderHeaderNavigation data={buttons} className={styles.buttonsList} />
         <Logo className={styles.logo} />
-        <RenderHeaderNavigation data={buttons} className={styles.buttonsList} />
+        <RenderHeaderNavigation data={[{ name: "...", link: "/404" },
+        { name: "...", link: "/404" }]} className={styles.buttonsList} />
       </div>
       <Cart />
     </div>

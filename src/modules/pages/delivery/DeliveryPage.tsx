@@ -1,8 +1,12 @@
+import Head from "next/head";
 import styles from "./styles/deliveryPage.module.scss";
 
 const DeliveryPage = () => {
   return (
     <div className={styles.deliveryPage}>
+      <Head>
+      <title>SushiFish || Доставка</title>
+      </Head>
       <div className={styles.text}>
         Delivery from 15€. Average delivery time - 1 hour. <br /> Pickup only
         from NoName street.

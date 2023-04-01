@@ -1,23 +1,13 @@
-import { CartType } from "@/store/cart-store";
-import { useSelector } from "react-redux";
-import CartProductCard from "./CartProductCard";
-
-interface CartState {
-  cart: CartType;
-}
+import Head from "next/head";
+import CartList from "./CartList";
 
 const CartPage = () => {
-  const cart = useSelector((state: CartState) => state.cart);
-
-  console.log(cart);
-
   return (
     <>
-      {cart
-        ? cart.products.map((product) => (
-            <CartProductCard key={product.type} data={product} />
-          ))
-        : "Пусто"}
+      <Head>
+      <title>SushiFish || Корзина</title>
+      </Head>
+      <CartList />
     </>
   );
 };
