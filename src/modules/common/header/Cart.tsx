@@ -2,6 +2,7 @@ import { CartType } from "@/store/cart-store";
 import { useSelector } from "react-redux";
 import CartIcon from "../icons/CartIcon";
 import styles from "./styles/cart.module.scss";
+import Link from "next/link";
 
 interface CartState {
   cart: CartType;
@@ -12,7 +13,7 @@ const Cart = () => {
 
   return (
     <div className={styles.cart}>
-      <CartIcon className={styles.logo} />
+      <Link href="/cart"><CartIcon className={styles.logo} /></Link>
       {cart.deliverySum}€
     </div>
   );

@@ -85,7 +85,7 @@ const Header = () => {
 
   return (
     <div className={styles.header}>
-      <div style={{ width: 10 }}></div>
+      <div style={{ flexBasis: '25%' }}></div>
       <div className={styles.center}>
         <RenderHeaderNavigation data={buttons} className={styles.buttonsList} />
         <Logo className={styles.logo} />
